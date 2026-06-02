@@ -226,7 +226,7 @@ class LMPipeline(Pipeline):
         max_length: int | None = None,
         logit_labels: bool = False,
         position_ids: bool = False,
-        use_chat_template: bool = False,
+        use_chat_template: bool = True,
         chat_answer_directive: str | None = None,
         padding_side: str | None = "left",
         load_weights: bool = True,
