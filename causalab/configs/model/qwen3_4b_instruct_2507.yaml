@@ -1,0 +1,6 @@
+id: qwen3_4b_instruct_2507
+name: Qwen/Qwen3-4B-Instruct-2507
+device: auto
+dtype: float32
+slurm:
+  gpus: 1
