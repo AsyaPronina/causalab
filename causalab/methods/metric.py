@@ -867,7 +867,7 @@ def compute_base_accuracy(
         batch_inputs = [ex["input"] for ex in batch_examples]
 
         result = pipeline.generate(batch_inputs)
-        print(f"result={result["string"]}")
+        print(f"result={result}")
         strings = result["string"]
         if isinstance(strings, str):
             strings = [strings]
