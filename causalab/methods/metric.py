@@ -865,10 +865,9 @@ def compute_base_accuracy(
         end = min(start + batch_size, len(dataset))
         batch_examples = dataset[start:end]
         batch_inputs = [ex["input"] for ex in batch_examples]
-        print(f"batch_inputs: {batch_inputs}")
 
         result = pipeline.generate(batch_inputs)
-        print(f"result={result}")
+        print(f"result={result.strings}")
         strings = result["string"]
         if isinstance(strings, str):
             strings = [strings]
